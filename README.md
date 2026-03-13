@@ -3,6 +3,9 @@
 This project focuses on cleaning and analyzing a global layoffs dataset using SQL.  
 The goal was to prepare messy real-world data for analysis and extract insights about layoffs trends across companies, industries, and countries.
 
+This project is based on the SQL Data Cleaning and EDA project tutorial by Alex The Analyst.
+I followed the workflow and implemented the data cleaning steps using MySQL on the layoffs dataset.
+
 ---
 
 ## Dataset
@@ -35,8 +38,6 @@ Several cleaning steps were then applied:
 
 All cleaning queries are available in: data_cleaning.sql
 
-
-
 ### 2. Data Analysis
 
 After cleaning the data, SQL queries were used to analyze layoffs trends:
@@ -48,9 +49,40 @@ After cleaning the data, SQL queries were used to analyze layoffs trends:
 
 All analysis queries are available in: analysis.sql
 
+### 3. Exploratory Data Analysis (EDA)
 
+Additional exploration was performed to identify patterns and trends in the dataset.
 
----
+Examples include:
+
+- Maximum layoffs in a single event
+- Companies that laid off 100% of employees
+- Companies with the biggest single layoffs
+- Layoffs by company stage
+- Rolling layoffs trends over time
+
+All EDA queries can be found in: eda.sql
+
+## SQL Skills Demonstrated
+
+This project demonstrates several important SQL concepts:
+
+- Data Cleaning
+- Window Functions (`ROW_NUMBER`)
+- Aggregate Functions (`SUM`, `MAX`)
+- `GROUP BY`
+- `ORDER BY`
+- Common Table Expressions (CTE)
+- Exploratory Data Analysis
+
+## Project Structure
+layoffs-sql-project
+│
+├── README.md
+├── data_cleaning.sql
+├── analysis.sql
+├── eda.sql
+└── layoffs.csv
 
 ## Tools Used
 
@@ -58,8 +90,6 @@ All analysis queries are available in: analysis.sql
 - SQL
 - MySQL Workbench
 - GitHub
-
----
 
 ## Key SQL Concepts Used
 
