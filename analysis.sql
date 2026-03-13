@@ -24,3 +24,4 @@ SELECT country, SUM(total_laid_off) AS total_layoffs
 FROM layoffs_cleaned
 GROUP BY country
 ORDER BY total_layoffs DESC;
+
